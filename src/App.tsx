@@ -1,53 +1,74 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { invoke } from "@tauri-apps/api/tauri";
-import "./App.css";
+import type { FC } from 'react';
+import { useState, useCallback } from 'react';
+import { invoke } from '@tauri-apps/api/tauri';
+import { Formik, Field } from 'formik';
+import {
+  ChakraProvider,
+  Container,
+  HStack,
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  Heading,
+  Text,
+  Link,
+  Image,
+} from '@chakra-ui/react';
 
-function App() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+// Styles
+import theme from './styles/theme';
 
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    setGreetMsg(await invoke("greet", { name }));
-  }
+const App: FC = () => {
+  const [message, setMessage] = useState<string>('');
+
+  const handleGreet = useCallback(async ({ name }: any) => {
+    setMessage(await invoke('greet', { name }));
+  }, []);
 
   return (
-    <div className="container">
-      <h1>Welcome to Tauri!</h1>
+    <ChakraProvider theme={theme}>
+      <Container>
+        <Heading as='h1'>Welcome to Tauri!</Heading>
 
-      <div className="row">
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo vite" alt="Vite logo" />
-        </a>
-        <a href="https://tauri.app" target="_blank">
-          <img src="/tauri.svg" className="logo tauri" alt="Tauri logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+        <HStack>
+          <Link href='https://vitejs.dev' isExternal>
+            <Image src='/vite.svg' alt='Vite logo' />
+          </Link>
+          <Link href='https://tauri.app' isExternal>
+            <Image src='/tauri.svg' alt='Tauri logo' />
+          </Link>
+        </HStack>
 
-      <p>Click on the Tauri, Vite, and React logos to learn more.</p>
+        <Text>Click on the Tauri, Vite, and React logos to learn more.</Text>
 
-      <form
-        className="row"
-        onSubmit={(e) => {
-          e.preventDefault();
-          greet();
-        }}
-      >
-        <input
-          id="greet-input"
-          onChange={(e) => setName(e.currentTarget.value)}
-          placeholder="Enter a name..."
-        />
-        <button type="submit">Greet</button>
-      </form>
+        <Formik
+          initialValues={{
+            name: '',
+          }}
+          onSubmit={({ name }: any) => handleGreet({ name })}
+        >
+          {({ handleSubmit }) => (
+            <form onSubmit={handleSubmit}>
+              <FormControl>
+                <FormLabel>Name</FormLabel>
+                <Field
+                  as={Input}
+                  name='name'
+                  variant='filled'
+                  placeholder='Enter a name...'
+                />
+              </FormControl>
 
-      <p>{greetMsg}</p>
-    </div>
+              <Button type='submit'>Greet</Button>
+            </form>
+          )}
+        </Formik>
+
+        <p>{message}</p>
+      </Container>
+    </ChakraProvider>
   );
-}
+};
 
 export default App;
