@@ -304,9 +304,9 @@
     to-fast-properties "^2.0.0"
 
 "@chakra-ui/react@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-3.0.1.tgz#ab601d87e23ca8050179ee4eaef3c3332a6521ae"
-  integrity sha512-OHpX77s/IlPlx1ACnL/8gsxak6VQ5u9tL6q86MtNZscjrdjZN67TWWhWP6yWR4y4DmqHm5zKyKk9TiRCMM0KRA==
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-3.0.2.tgz#c22b00a7cf04b804ea50033020852a05b68937b8"
+  integrity sha512-xfW0tGCLJSvNkMFrz4zyjvImugwVb4gYvsGOT9hISMhDvh20ciS3WEI8S+jia4ytkl5yI4H0KPyuMjQt/gM69Q==
   dependencies:
     "@ark-ui/anatomy" "3.5.0"
     "@ark-ui/react" "4.1.2"
