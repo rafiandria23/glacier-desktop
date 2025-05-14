@@ -234,9 +234,9 @@
     "@babel/helper-validator-identifier" "^7.25.9"
 
 "@chakra-ui/react@^3.0.0":
-  version "3.17.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-3.17.0.tgz#a010bf6a799c61d0a83d91fb3117ab32acba508d"
-  integrity sha512-b6syn8PTCAEqXQa52KtVFs2lAavFTldb2SkBbAqmrlWQyE58jTxpgxaEsYsqQxq/bljwC0xHsh5/ACU7Xwr6sA==
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-3.18.0.tgz#9cbd6ac7bb669858f8c6f7bea031ff968c0be95b"
+  integrity sha512-/9uY+6BkbO2WNjtk0B+STC4vnxcQpE9eQs8XDGrAYHHEKUdPZbYCnKvXibdixkrLweIpQP2Yx9Vv5UuCvWzXHQ==
   dependencies:
     "@ark-ui/react" "5.8.0"
     "@emotion/is-prop-valid" "1.3.1"
@@ -480,9 +480,9 @@
   integrity sha512-ICgUR+kPimx0vvRzf+N/7L7tVSQeE3BYY+NhHRHXS1kBuPO7z2+7ea2HbhDyZdTephgvNvKrlDDKUexuCVBVvg==
 
 "@floating-ui/core@^1.6.0":
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.6.9.tgz#64d1da251433019dafa091de9b2886ff35ec14e6"
-  integrity sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.0.tgz#1aff27a993ea1b254a586318c29c3b16ea0f4d0a"
+  integrity sha512-FRdBLykrPPA6P76GGGqlex/e7fbe0F1ykgxHYNXQsH/iTEtjMj/f9bpY5oQqbjt5VgZvgz/uKXbGuROijh3VLA==
   dependencies:
     "@floating-ui/utils" "^0.2.9"
 
