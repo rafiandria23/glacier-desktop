@@ -1811,11 +1811,11 @@ formik@^2.4.5:
     tslib "^2.0.0"
 
 framer-motion@^12.0.0:
-  version "12.23.20"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.23.20.tgz#179ddf1574a4fcd0218f212bc6fcce59f09e131f"
-  integrity sha512-+GWIKV6Rb8XtZO3gQ1adkZI3Oq14zQdeZdgcy+smOIbXGnqzOcNz1luU27bCtBiUxTXsE9hCLLnbeRJrcbAuLQ==
+  version "12.23.21"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.23.21.tgz#8e82b381c79fb843c844121455feba19847c0978"
+  integrity sha512-UWDtzzPdRA3UpSNGril5HjUtPF1Uo/BCt5VKG/YQ8tVpSkAZ22+q8o+hYO0C1uDAZuotQjcfzsTsDtQxD46E/Q==
   dependencies:
-    motion-dom "^12.23.20"
+    motion-dom "^12.23.21"
     motion-utils "^12.23.6"
     tslib "^2.4.0"
 
@@ -1945,10 +1945,10 @@ micromatch@^4.0.5:
     braces "^3.0.3"
     picomatch "^2.3.1"
 
-motion-dom@^12.23.20:
-  version "12.23.20"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.23.20.tgz#18489f9f696feb667c8c1fbbab4efdbece52d8af"
-  integrity sha512-0eFXthY9L6F1trIu/9q99DkBfpAjrdqsw+pZQVEEl6IvS4QiF7Nz9HSbQ5HrXVdE0Xsm72ZDmmoGAivATxEJqg==
+motion-dom@^12.23.21:
+  version "12.23.21"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.23.21.tgz#1efe2d1bdda31875f0ee56d06f02be7b562a0bdd"
+  integrity sha512-5xDXx/AbhrfgsQmSE7YESMn4Dpo6x5/DTZ4Iyy4xqDvVHWvFVoV+V2Ri2S/ksx+D40wrZ7gPYiMWshkdoqNgNQ==
   dependencies:
     motion-utils "^12.23.6"
 
