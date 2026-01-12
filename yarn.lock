@@ -1874,9 +1874,9 @@ formik@^2.4.5:
     tslib "^2.0.0"
 
 framer-motion@^12.0.0:
-  version "12.26.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.26.0.tgz#91404ba620aa8751958abb1aa162591b55c09825"
-  integrity sha512-yFatQro5/mNKVqBT/IAMq9v27z4dJsjKklnsCu7mdp2mrn78UW3mkG4qfmmLxHzh6WMts1o+A4FH4Iiomt/jFQ==
+  version "12.26.1"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.26.1.tgz#007a1d900add78fc65c890f88bd7f8d903f48e67"
+  integrity sha512-Uzc8wGldU4FpmGotthjjcj0SZhigcODjqvKT7lzVZHsmYkzQMFfMIv0vHQoXCeoe/Ahxqp4by4A6QbzFA/lblw==
   dependencies:
     motion-dom "^12.24.11"
     motion-utils "^12.24.10"
